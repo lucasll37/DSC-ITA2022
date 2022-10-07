@@ -1,0 +1,1 @@
+# Execute o jupyter notebook na pasta raíz do projeto para o correto carregamento dos dados e imagens
