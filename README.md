@@ -2,3 +2,4 @@
 ## Equipe DIOMGIS
 
 - Execute o jupyter notebook na pasta raiz do projeto para o correto carregamento dos dados e imagens
+- Pastas Sandbox são voltadas para rascunhos e experimentações individuais
