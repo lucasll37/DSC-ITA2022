@@ -1,0 +1,23 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'tensorcode23.py'
+ outputting to 'tensorcode23_u.py'
+--------------------------------------------------------------------------------
+
+16:7: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+45:12: INFO: Added keywords to args of function 'tf.reduce_sum'
+45:12: INFO: Renamed keyword argument for tf.reduce_sum from reduction_indices to axis
+48:17: INFO: Added keywords to args of function 'tf.argmin'
+53:16: INFO: Renamed 'tf.unsorted_segment_sum' to 'tf.math.unsorted_segment_sum'
+55:16: INFO: Renamed 'tf.unsorted_segment_sum' to 'tf.math.unsorted_segment_sum'
+67:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+--------------------------------------------------------------------------------
+
