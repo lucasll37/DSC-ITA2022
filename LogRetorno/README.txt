@@ -1,0 +1,1 @@
+# Use: python check_submission.py predicao.csv
