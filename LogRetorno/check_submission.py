@@ -2,6 +2,7 @@ import pandas as pd
 import sys
 
 # Use: python check_submission.py arquivo.csv
+# Pasta com exemplo: https://drive.google.com/drive/folders/1bQVj1sx4_yCRPkXlh1c4YuH20Y0l9nf8?usp=sharing
 
 # Definições
 COLUMN_NAMES = ['Dia', 'A', 'AAL', 'AAP', 'AAPL', 'ABBV', 'ABC', 'ABMD', 'ABT',
@@ -40,7 +41,7 @@ COLUMN_NAMES = ['Dia', 'A', 'AAL', 'AAP', 'AAPL', 'ABBV', 'ABC', 'ABMD', 'ABT',
        'META', 'MGM', 'MHK', 'MKC', 'MKTX', 'MLM', 'MMC', 'MMM', 'MNST',
        'MO', 'MOH', 'MOS', 'MPC', 'MPWR', 'MRK', 'MRNA', 'MRO', 'MS',
        'MSCI', 'MSFT', 'MSI', 'MTB', 'MTCH', 'MTD', 'MU', 'NCLH', 'NDAQ',
-       'NDSN', 'NEE', 'NEM', 'NFLX', 'NI', 'NKE', 'NLOK', 'NLSN', 'NOC',
+       'NDSN', 'NEE', 'NEM', 'NFLX', 'NI', 'NKE', 'NLOK', 'NOC',
        'NOW', 'NRG', 'NSC', 'NTAP', 'NTRS', 'NUE', 'NVDA', 'NVR', 'NWL',
        'NWS', 'NWSA', 'NXPI', 'O', 'ODFL', 'OGN', 'OKE', 'OMC', 'ON',
        'ORCL', 'ORLY', 'OTIS', 'OXY', 'PARA', 'PAYC', 'PAYX', 'PCAR',
@@ -70,6 +71,6 @@ df_submission = pd.read_csv(sys.argv[1])
 
 assert ';' not in (df_submission.columns[0]), 'Não utilize ";", as colunas devem ser separadas por "," (vírgula)'
 assert all( [col == COLUMN_NAMES[id] for id, col in enumerate(df_submission.columns)] ), f'Siga exatamente a seguinte ordem para as colunas: {COLUMN_NAMES}'
-assert df_submission.shape == (20,504), "O arquivo deve conter exatamente 20 linhas e 504 colunas"
+assert df_submission.shape == (20,503), "O arquivo deve conter exatamente 20 linhas e 503 colunas"
 
 print("Ok, você pode submeter o código")
